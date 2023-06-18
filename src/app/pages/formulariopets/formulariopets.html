@@ -4,7 +4,6 @@
         <!-- <img src="./../../../assets/images/logo_utm.png" /> 
         <span>{{eventos._NOMBRE_APP}}</span> -->
 
-
         <div class="form_login">
           <h1 class="bienvenidos"> Bienvenidos </h1>
           <h3 class> Por favor indrodusca los datos requeridos: </h3>
@@ -13,12 +12,10 @@
             <input type = "text" [(ngModel)]="objeto_persona.apellidos" nz-input placeholder="Nombre del su dueño"/>
             <input type = "email" [(ngModel)]="objeto_persona.correo" nz-input placeholder="Correo de contacto"/>
     
-    
-            <nz-select [(ngModel)]="objeto_persona.ciudad" style="width: 100%;" nzPlaceHolder="Seleccione su provincia">
+                <nz-select [(ngModel)]="objeto_persona.ciudad" style="width: 100%;" nzPlaceHolder="Seleccione su provincia">
                 <nz-option *ngFor="let item of objeto_ciudad" nzValue="{{item}}" nzLabel="{{item}}"></nz-option>
             </nz-select>
-    
-    
+                
             <button [disabled]="!objeto_persona.cedula || !objeto_persona.nombres || !objeto_persona.apellidos || !objeto_persona.ciudad || !objeto_persona.correo" nzType="primary" (click)="dar_click()">Guardar</button>
         
                 <div class="tablaestilo">
@@ -30,8 +27,7 @@
                         <th>Apellios</th>
                         <th>Ciudad</th>
                         <th>Acciones</th>
-    
-    
+        
     
                       </tr>
                     </thead>

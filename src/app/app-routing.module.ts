@@ -10,11 +10,8 @@ import { formulariopets } from './pages/formulariopets/formulariopets';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: '', pathMatch: 'full', redirectTo: 'Neicer' },
-  { path: '', pathMatch: 'full', redirectTo: 'Yerson' },
-  { path: '', pathMatch: 'full', redirectTo: 'Maria' },
-   { path: 'Yerson', component: formulario },
+  { path: 'Yerson', component: formulario },
   {path: 'Maria', component: formulariopc },
   {path: 'Neicer', component: formulariopets },
   {
